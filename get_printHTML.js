@@ -1,5 +1,5 @@
 const https = require('https');
-const fs = require('fs');
+
 let buff = '';
 
 function getAndPrintHTML () {

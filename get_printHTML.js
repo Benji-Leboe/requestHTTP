@@ -1,28 +1,29 @@
 const https = require('https');
+const fs = require('fs');
+let buff = '';
 
+function getAndPrintHTML () {
 
-
-function getAndPrintHTMLChunks(){
-
-  const requestOptions = {
+  var requestOptions = {
     host: 'sytantris.github.io',
-    path: '/http-examples/step1.html'
+    path: '/http-examples/step2.html'
   };
-  
+
   https.get(requestOptions, (response) => {
     response.setEncoding('utf8');
   
     response.on('data', (data) => {
       console.log(`Chunk length received: ${data.length}`);
-      console.log(`Chunk received: ${data} \n`)
+      buff += data.toString();
     });
   
     response.on('end', () => {
       console.log('Response stream ended.');
+      console.log(buff);
     });
-  
+
   });
+
 }
 
-
-console.log(getAndPrintHTMLChunks())
+console.log(getAndPrintHTML());

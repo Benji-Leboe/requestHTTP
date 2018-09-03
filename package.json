@@ -1,0 +1,20 @@
+{
+  "name": "requestHTTP",
+  "version": "1.0.0",
+  "description": "README for HTTP request script",
+  "main": "get_printChunks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benji-Leboe/requestHTTP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benji-Leboe/requestHTTP/issues"
+  },
+  "homepage": "https://github.com/Benji-Leboe/requestHTTP#readme"
+}

@@ -11,7 +11,6 @@ function to1337(html){
   for(key in toReplace){
     let re = new RegExp(key, "g");
     out1337 = out1337.replace(re, toReplace[key]);
-    console.log(out1337);
   }
   
   console.log(out1337);

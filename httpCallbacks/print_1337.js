@@ -7,7 +7,7 @@ var requestOptions = {
 
 function to1337(html){
   let out1337 = html;
-  const toReplace = {a : '4', e : '3', l : '1', o : '0', s : '5', t : '7', 'ck' : 'x', 'er' : '0r', 'you' : 'j00'}
+  const toReplace = {a : '4', e : '3', l : '1', o : '0', s : '5', t : '7', 'ck' : 'x', '3r' : '0r', 'y0u' : 'j00'}
   for(key in toReplace){
     let re = new RegExp(key, "g");
     out1337 = out1337.replace(re, toReplace[key]);
